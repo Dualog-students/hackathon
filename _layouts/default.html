@@ -10,16 +10,10 @@
     <script src="assets/countdown.js"></script>
 
     <script type="text/javascript">
-    //   $(function () {
-    //     var eventDate = new Date();
-    //     eventDate = new Date("{{site.time}}");
-    //     $('#defaultCountdown').countdown({ until: eventDate });
-    //     $('#year').text(eventDate.getFullYear());
-    //     console.log("Started counter...");
-    //   });
-    
     // call the timer function
-    countDownClock(20, 'days');
+
+    let eventDate = new Date(new Date(Date.parse("{{site.time}}")));
+    countDownClock(eventDate);
     </script>
 
   </body>
