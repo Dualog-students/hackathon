@@ -5,7 +5,7 @@ A simple and static countdown page template for apps using [Jekyll](https://jeky
 ## Getting started
 
 Fork the repo and edit `_config.yml` and then activate GitHub Pages in the repo settings.
-This project depends on Ruby and github-pages gem. 
+This project depends on Ruby and github-pages gem.
 
 ### **1. Installing Ruby and dependencies:**
 
@@ -34,10 +34,11 @@ After installing please verify the version by running:
 
 ```bash
 $ ruby -v
-ruby 2.5.1p57 (2018-03-29 revision 63029) [x64-mingw32] 
+ruby 2.5.1p57 (2018-03-29 revision 63029) [x64-mingw32]
 ```
 
 Life should be great right now, install the project dependencies
+
 ```bash
 $ gem install github-pages
 ...
