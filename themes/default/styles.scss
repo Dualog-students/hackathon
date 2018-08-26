@@ -22,11 +22,6 @@ body {
    -webkit-font-smoothing: antialiased;
 }
 
-#defaultCountdown {
-  padding-top: 60px;
-  font-size:1em;
-}
-
 a {
   transition: all .3s;
 }
@@ -58,13 +53,6 @@ a:focus, a:hover { color: darken({{ site.download_button_background_color }}, 40
 .app-meta {
   margin-bottom: 20px;
   font-size: 32px;
-}
-
-.app-icon {
-  display: block;
-  margin: 0 auto 10px;
-  border-radius: 15px;
-  width: 92px;
 }
 
 .marketing-desc {
@@ -141,10 +129,6 @@ a:focus, a:hover { color: darken({{ site.download_button_background_color }}, 40
 @media (min-width: 768px) {
   .marketing {
     text-align: left;
-  }
-
-  .app-icon {
-    display: inline;
   }
 
   .marketing-desc {
