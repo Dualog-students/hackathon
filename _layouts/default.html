@@ -7,16 +7,18 @@
 
     <script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <script src="assets/jquery.countdown.min.js"></script>
+    <script src="assets/countdown.js"></script>
 
     <script type="text/javascript">
-      $(function () {
-        var eventDate = new Date();
-        eventDate = new Date("{{site.time}}");
-        $('#defaultCountdown').countdown({ until: eventDate });
-        $('#year').text(eventDate.getFullYear());
-        console.log("Started counter...");
-      });
+    //   $(function () {
+    //     var eventDate = new Date();
+    //     eventDate = new Date("{{site.time}}");
+    //     $('#defaultCountdown').countdown({ until: eventDate });
+    //     $('#year').text(eventDate.getFullYear());
+    //     console.log("Started counter...");
+    //   });
+
+    countDownClock(20, 'days');
     </script>
 
   </body>

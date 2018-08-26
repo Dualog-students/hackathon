@@ -3,40 +3,61 @@
     <div class="row">
 
       <div class="col-sm-12 text-center">
-          <h1>{{ site.title }}</h1>
-          <p>{{ site.description }}</p>
+        <h1>{{ site.title }}</h1>
+        <p>{{ site.description }}</p>
       </div>
 
       <div class="col-sm-12 text-center">
-          <img class="app-screenshot" style="width:60%" {% if site.logo %} src="{{ site.logo }}" {% endif %} />
+        <img class="app-screenshot" style="width:60%" {% if site.logo %} src="{{ site.logo }}" {% endif %} />
       </div>
 
       <div class="col-sm-12 text-center">
         <div class="col-sm-8 col-sm-offset-2 text-center">
-          <div id="defaultCountdown" />
-      </div>
-      
-      <div class="col-sm-12 text-center" style="padding:30px">
-        <h2>{{ site.time | date: "%A %B %-d, %Y" }}</h2>
-      </div>
 
+          <section class="countdown-container">
+            <div class="days-container">
+              <div class="days"></div>
+              <div class="days-label">days</div>
+            </div>
+
+            <div class="hours-container">
+              <div class="hours"></div>
+              <div class="hours-label">hours</div>
+            </div>
+
+            <div class="minutes-container">
+              <div class="minutes"></div>
+              <div class="minutes-label">minutes</div>
+            </div>
+
+            <div class="seconds-container">
+              <div class="seconds"></div>
+              <div class="seconds-label">seconds</div>
+            </div>
+          </section>
+        </div>
+
+        <div class="col-sm-12 text-center" style="padding:30px">
+          <h2>{{ site.time | date: "%A %B %-d, %Y" }}</h2>
+        </div>
+
+      </div>
     </div>
   </div>
-</div>
 
-<div class="social">
-  <div class="container">
-    <div class="row">
+  <div class="social">
+    <div class="container">
+      <div class="row">
 
-      <div class="col-sm-12">
-        {% include social.html %}
+        <div class="col-sm-12">
+          {% include social.html %}
+        </div>
+
       </div>
-
     </div>
   </div>
-</div>
 
-<div class="footer">
-  <div class="container">
+  <div class="footer">
+    <div class="container">
+    </div>
   </div>
-</div>
