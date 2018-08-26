@@ -8,11 +8,11 @@
     <script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script src="assets/countdown.js"></script>
+    <script src="assets/moment.js"></script>
 
     <script type="text/javascript">
     // call the timer function
-
-    let eventDate = new Date(new Date(Date.parse("{{site.time}}")));
+    let eventDate = moment.utc('{{ site.time }}');   
     countDownClock(eventDate);
     </script>
 
